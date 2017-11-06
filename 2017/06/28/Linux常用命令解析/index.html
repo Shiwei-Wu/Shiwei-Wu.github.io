@@ -99,7 +99,7 @@ df: 查看文件系统的可用空间及使用情况
 查看文件和文件夹大小
 df: 查看文件系统的可用空间及使用情况
 1234567$ df -hFilesystem      Size   Used  Avail Capacity iused      ifree %iused  Mounted on/dev/disk1     232Gi   77Gi  155Gi    34% 2083874 429288">
-<meta property="og:updated_time" content="2017-06-28T23:30:30.000Z">
+<meta property="og:updated_time" content="2017-07-08T14:03:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令解析">
 <meta name="twitter:description" content="本文介绍了linux常用的一些命令。
@@ -332,10 +332,10 @@ df: 查看文件系统的可用空间及使用情况
       
         <p>本文介绍了linux常用的一些命令。</p>
 <h2 id="查看文件和文件夹大小">查看文件和文件夹大小</h2>
-<h5 id="df-查看文件系统的可用空间及使用情况">df: 查看文件系统的可用空间及使用情况</h5>
+<p><strong>df: 查看文件系统的可用空间及使用情况</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ df -h</div><div class="line"></div><div class="line">Filesystem      Size   Used  Avail Capacity iused      ifree %iused  Mounted on</div><div class="line">/dev/disk1     232Gi   77Gi  155Gi    34% 2083874 4292883405    0%   /</div><div class="line">devfs          182Ki  182Ki    0Bi   100%     630          0  100%   /dev</div><div class="line">map -hosts       0Bi    0Bi    0Bi   100%       0          0  100%   /net</div><div class="line">map auto_home    0Bi    0Bi    0Bi   100%       0          0  100%   /home</div></pre></td></tr></table></figure>
 <p>选项 <code>-h</code> 表示使用「Human-readable」的输出，也就是在文件系统大小使用 GB、MB 等易读的格式。</p>
-<h5 id="du-查询文件或文件夹的磁盘占用空间">du: 查询文件或文件夹的磁盘占用空间</h5>
+<p><strong>du: 查询文件或文件夹的磁盘占用空间</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ du -sh  <span class="comment"># 默认只显示当前目录的磁盘占用空间</span></div><div class="line"></div><div class="line">127M    .</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ du -h   <span class="comment"># 默认递归显示当前目录下所有子目录（不包括文件）的磁盘占用空间</span></div><div class="line"></div><div class="line"> 20K    ./<span class="built_in">source</span>/_posts</div><div class="line"> 20K    ./<span class="built_in">source</span></div></pre></td></tr></table></figure>
 <p>使用<code>-a</code>显示文件的大小</p>
@@ -512,7 +512,7 @@ df: 查看文件系统的可用空间及使用情况
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看文件和文件夹大小"><span class="nav-number">1.</span> <span class="nav-text">查看文件和文件夹大小</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#df-查看文件系统的可用空间及使用情况"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">df: 查看文件系统的可用空间及使用情况</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#du-查询文件或文件夹的磁盘占用空间"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">du: 查询文件或文件夹的磁盘占用空间</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看文件和文件夹大小"><span class="nav-number">1.</span> <span class="nav-text">查看文件和文件夹大小</span></a></li></ol></div>
             
 
           </div>
